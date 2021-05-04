@@ -5,7 +5,8 @@ const list = document.querySelector('.list-font')
 
 //* Events
 document.addEventListener('DOMContentLoaded', getFonts)
-input.addEventListener('keyup', filterFonts)
+input.addEventListener('keyup', filterFonts);
+
 
 //* Functions
 function filterFonts(e) {
