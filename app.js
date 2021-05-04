@@ -10,22 +10,29 @@ input.addEventListener('keyup', filterFonts)
 //* Functions
 function filterFonts(e) {
     let text = e.target.value;
-    document.querySelectorAll('.list-font li').forEach(function (item) {
-        let font = item.textContent;
-        if (font.toLocaleLowerCase().indexOf(text) !== -1) {
-            item.style.display = 'flex'
-        } else {
+    if (text === '') {
+        let listItems = list.children;
+        const Items = Array.from(listItems);
+        Items.forEach(function (item) {
             item.style.display = 'none'
-        }
+        })
+    } else {
 
-    })
+        document.querySelectorAll('.list-font li').forEach(function (item) {
+            let font = item.textContent;
+            if (font.toLocaleLowerCase().indexOf(text) !== -1) {
+                item.style.display = 'flex'
+            } else {
+                item.style.display = 'none'
+            }
+        })
+    }
 }
 
 function getFonts() {
     const fonts = document.querySelectorAll('.drop li');
     fonts.forEach((item) => {
         const font = item.textContent;
-        console.log(font);
         const li = document.createElement('li');
         li.classList.add('item-font');
         li.innerHTML = `
@@ -33,7 +40,7 @@ function getFonts() {
       `
         list.insertAdjacentElement("beforeend", li)
 
-        // font.style.display = 'none'
+        li.style.display = 'none'
     })
 }
 
