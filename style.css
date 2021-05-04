@@ -99,7 +99,7 @@ nav .container {
     padding: 17px 11px;
    background: #8254EA;
    /* background-image: linear-gradient(to right  , #8254EA 18%,#E76DED); */
-   background: #186ae6;
+   background: #186ae693;
     margin-top: 5px;
     border-radius: 4px;
     cursor: pointer;
@@ -117,7 +117,7 @@ nav .container {
 
 /* Results */
 #results {
-    padding-top: 60px;
+    padding: 60px 0;
 }
 
 #results h2.title {
@@ -126,5 +126,25 @@ nav .container {
     font-family: 'Open Sans', sans-serif;
 }
 
+.list-font {
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+.list-font .item-font {
+    width: 30%;
+    height: 200px;
+    margin: 10px 0;
+    padding: 20px 10px;
+    background: #ffffff63;
+    display: flex;
+}
+.list-font .item-font a {
+   font-size: 28px;
+   margin: auto;
+}
 
 
