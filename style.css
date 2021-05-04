@@ -77,8 +77,9 @@ nav .container {
 /* List item */
 .list {
   display: flex;
-  width: 40%;
+  width: 33%;
   justify-content: space-between;
+  margin-right: 60px;
 }
 
 .list .list-item {
@@ -142,6 +143,39 @@ nav .container {
 }
 .list .list-item:hover > ul li:nth-child(7) {
   animation: drop 300ms ease-in-out 750ms forwards;
+}
+.list .list-item:hover > ul li:nth-child(8) {
+  animation: drop 300ms ease-in-out 950ms forwards;
+}
+.list .list-item:hover > ul li:nth-child(9) {
+  animation: drop 300ms ease-in-out 1050ms forwards;
+}
+.list .list-item:hover > ul li:nth-child(10) {
+  animation: drop 300ms ease-in-out 1200ms forwards;
+}
+.list .list-item:hover > ul li:nth-child(11) {
+  animation: drop 300ms ease-in-out 1350ms forwards;
+}
+.list .list-item:hover > ul li:nth-child(12) {
+  animation: drop 300ms ease-in-out 1500s forwards;
+}
+.list .list-item:hover > ul li:nth-child(13) {
+  animation: drop 300ms ease-in-out 16500ms forwards;
+}
+.list .list-item:hover > ul li:nth-child(14) {
+  animation: drop 300ms ease-in-out 1800ms forwards;
+}
+.list .list-item:hover > ul li:nth-child(15) {
+  animation: drop 300ms ease-in-out 1950ms forwards;
+}
+.list .list-item:hover > ul li:nth-child(16) {
+  animation: drop 300ms ease-in-out 2100ms forwards;
+}
+.list .list-item:hover > ul li:nth-child(17) {
+  animation: drop 300ms ease-in-out 2250ms forwards;
+}
+.list .list-item:hover > ul li:nth-child(18) {
+  animation: drop 300ms ease-in-out 2400ms forwards;
 }
 
 @keyframes drop {
